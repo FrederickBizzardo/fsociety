@@ -1191,9 +1191,9 @@ def grabuploadedlink(url):
         for dir in directories:
             currentcode = urllib.urlopen(url + dir).getcode()
             if currentcode == 200 or currentcode == 403:
-                print "-------------------------"
+                print "-------------------------" #please ignore the parenthesis I recently applied
                 print "  [ + ] Found Directory:  " + str(url + dir) + " [ + ]"
-                print "-------------------------"
+                print "-------------------------" #please ignore the parenthesis I recently applied
                 upload.append(url + dir)
     except:
         pass
